@@ -17,4 +17,6 @@ Then add this line to your app's configuration:
 
 Finally, initialize the manager with the base path of your config files, the target env, and the name of your app:
 
-    var config = configManager.init([BASE_PATH_TO_CONFIG_FILES], [TARGET_ENV], [NAME_OF_APP], callback);
+    configManager.init([BASE_PATH_TO_CONFIG_FILES], [TARGET_ENV], [NAME_OF_APP], function(conf){
+      //conf object contains the resolved config values for the TARGET_ENV for the target app
+    });
