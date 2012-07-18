@@ -1,0 +1,21 @@
+{
+  "default": {
+    "env4" : "value4OverrideReference",
+    "env5" : "value5OverrideReference",
+    "env6" : "value6OverrideReference",
+    "env7" : "value7OverrideReference",
+    "env8" : "value8OverrideReference"
+  },
+  "dev" : {
+    "env5" : "value5OverrideReferenceDev",
+    "devOnly1" : "value1OverrideReferenceDev"
+  },
+  "test" : {
+    "env6" : "value6OverrideReferenceTest",
+    "testOnly1" : "value1OverrideReferenceTest"
+  },
+  "prod" : {
+    "env7" : "value7OverrideReferenceProd",
+    "prodOnly1" : "value1OverrideReferenceProd"
+  }
+}

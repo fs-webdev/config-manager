@@ -1,0 +1,14 @@
+{
+    "name": "config-manager"
+  , "version": "1.0.0"
+  , "private": true
+  , "main": "./lib/Config.js"
+  , "dependencies": {
+      "async": "0.1.x"
+    }
+  , "devDependencies": {
+    "buster": "0.6.x"
+  }, "scripts": {
+      "test": "node_modules/.bin/buster-test"
+  }
+}

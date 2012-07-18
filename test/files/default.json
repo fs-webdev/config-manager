@@ -1,0 +1,27 @@
+{
+  "default": {
+    "env1" : "value1",
+    "env2" : "value2",
+    "env3" : "value3",
+    "env4" : "value4",
+    "env5" : "value5",
+    "env6" : "value6",
+    "env7" : "value7",
+    "env8" : "value8"
+  },
+  "dev" : {
+    "env1" : "value1OverrideDefaultDev",
+    "devOnly1" : "value1",
+    "devOnly2" : "value2"
+  },
+  "test" : {
+    "env2" : "value2OverrideDefaultTest",
+    "testOnly1" : "value1",
+    "testOnly2" : "value2"
+  },
+  "prod" : {
+    "env3" : "value3OverrideDefaultProd",
+    "prodOnly1" : "value1",
+    "prodOnly2" : "value2"
+  }
+}
