@@ -1,7 +1,9 @@
 # config-manager
 
 Config manager that helps you manage the environment vars for your different apps across all of your deployment 
-environments.
+environments.  Typical environments include `local`, `dev`, `test`, and `prod`, although you can have as many as you
+want, and call them whatever you like.  config-manager also supports having a default.json file
+which contains global config values shared across apps.
 
 ## How?
 
