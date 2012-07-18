@@ -1,7 +1,7 @@
 {
     "name": "config-manager"
   , "version": "1.0.0"
-  , "private": true
+  , "private": false
   , "main": "./lib/Config.js"
   , "dependencies": {
       "async": "0.1.x"
