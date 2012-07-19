@@ -1,10 +1,11 @@
 {
     "name": "config-manager"
-  , "version": "1.0.0"
+  , "version": "1.0.1"
   , "private": false
   , "main": "./lib/Config.js"
   , "dependencies": {
       "async": "0.1.x"
+    , "exists-patch": "0.0.0"
     }
   , "devDependencies": {
     "buster": "0.6.x"
