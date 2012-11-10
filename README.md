@@ -21,6 +21,10 @@ Finally, initialize the manager with the base path of your config files, the tar
       //At this point the conf object has the resolved env vars ready for use
     });
 
+There is also a synchronous version if you want:
+
+    var conf = configManager.initSync([BASE_PATH_TO_CONFIG_FILES], [TARGET_ENV], [NAME_OF_APP]);
+
 Config Files
 ---------------------------
 Example config files can be found in the `test/files` folder.  The basic layout of these files is as follows:

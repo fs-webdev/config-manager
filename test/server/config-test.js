@@ -6,21 +6,39 @@ buster.testCase("fs-config Tests", {
   },
   
   "local config": {
-    setUp: function(done) {
-      this.config = config.init('./test/files', 'local', 'reference', function(){
-        done();
-      });
+    "sync": {
+      setUp: function() {
+        this.config = config.initSync('./test/files', 'local', 'reference');
+      },
+
+      "equal to defaults" : function() {
+        assert.equals("value1", this.config.env["env1"]);
+        assert.equals("value2", this.config.env["env2"]);
+        assert.equals("value3", this.config.env["env3"]);
+        assert.equals("value4OverrideReference", this.config.env["env4"]);
+        assert.equals("value5OverrideReference", this.config.env["env5"]);
+        assert.equals("value6OverrideReference", this.config.env["env6"]);
+        assert.equals("value7OverrideReference", this.config.env["env7"]);
+        assert.equals("value8OverrideReference", this.config.env["env8"]);
+      }
     },
-    
-    "equal to defaults" : function() {
-      assert.equals("value1", this.config.env["env1"]);
-      assert.equals("value2", this.config.env["env2"]);
-      assert.equals("value3", this.config.env["env3"]);
-      assert.equals("value4OverrideReference", this.config.env["env4"]);
-      assert.equals("value5OverrideReference", this.config.env["env5"]);
-      assert.equals("value6OverrideReference", this.config.env["env6"]);
-      assert.equals("value7OverrideReference", this.config.env["env7"]);
-      assert.equals("value8OverrideReference", this.config.env["env8"]);
+    "async": {
+      setUp: function(done) {
+        this.config = config.init('./test/files', 'local', 'reference', function(){
+          done();
+        });
+      },
+
+      "equal to defaults" : function() {
+        assert.equals("value1", this.config.env["env1"]);
+        assert.equals("value2", this.config.env["env2"]);
+        assert.equals("value3", this.config.env["env3"]);
+        assert.equals("value4OverrideReference", this.config.env["env4"]);
+        assert.equals("value5OverrideReference", this.config.env["env5"]);
+        assert.equals("value6OverrideReference", this.config.env["env6"]);
+        assert.equals("value7OverrideReference", this.config.env["env7"]);
+        assert.equals("value8OverrideReference", this.config.env["env8"]);
+      }
     }
   },
   
